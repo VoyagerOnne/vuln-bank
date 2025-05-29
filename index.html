@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БанкПрестиж - Надежный финансовый партнер</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Заголовок -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/g5928181c72657886cec515f005213071a9875e213ccf275b0017f21d102e0b5a04376e8b14e119fa4d7d092a894d10187bbb19ba1d1c46c4d8ee466755c42bd8_1280.png" alt="БанкПрестиж">
+                <h1>БанкПрестиж</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Преимущества</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('loginModal')">Вход</a></li>
+                    <li class="nav-item"><a href="#" class="btn" onclick="openModal('registerModal')">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный раздел -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Ваше финансовое будущее в надежных руках</h2>
+                <p>БанкПрестиж предлагает инновационные финансовые решения, разработанные для вашего комфорта и успеха. Откройте новые возможности с нами.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Открыть счет</a>
+                    <a href="#" class="btn btn-outline">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем широкий спектр банковских услуг, которые помогут вам достичь ваших финансовых целей</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Банковские карты</h3>
+                    <p>Дебетовые и кредитные карты с кэшбэком, бонусами и специальными предложениями для любых потребностей.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Ипотека</h3>
+                    <p>Выгодные условия ипотечного кредитования с низкими процентными ставками и гибкими сроками погашения.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Инвестиции</h3>
+                    <p>Инвестиционные продукты, разработанные для роста вашего капитала с учетом ваших целей и риск-профиля.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>О БанкПрестиж</h2>
+                <p>Надежность, инновации и клиентоориентированность - основные ценности нашего банка</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/g1951d41f86e934bb84085420cce7daa5b492d3b4b4e198506ad54ab05ab6348e8e7efa8e7a2bb12ab48397f02a93214020507b8a1fbd0b69b92a8cba046b14b0_1280.jpeg" alt="О БанкПрестиж">
+                </div>
+                <div class="about-text">
+                    <h3>Более 25 лет на финансовом рынке</h3>
+                    <p>БанкПрестиж основан в 1998 году и за это время стал одним из лидеров банковской отрасли. Мы гордимся нашей историей и достижениями, которые стали возможны благодаря доверию наших клиентов.</p>
+                    <p>Наша миссия - обеспечивать клиентов инновационными финансовыми решениями, которые помогают им достигать своих целей и строить устойчивое финансовое будущее.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-value="5000000">5,000,000+</div>
+                            <div class="stat-label">Клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-value="350">350+</div>
+                            <div class="stat-label">Отделений</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-value="95">95%</div>
+                            <div class="stat-label">Удовлетворенность</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Почему выбирают нас</h2>
+                <p>Инновационные технологии, индивидуальный подход и надежность - вот что делает нас особенными</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Безопасность на высшем уровне</h3>
+                        <p>Мы используем передовые технологии шифрования для защиты ваших данных и финансов.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Мобильный банкинг 24/7</h3>
+                        <p>Управляйте финансами из любой точки мира с помощью нашего удобного мобильного приложения.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Выгодные условия</h3>
+                        <p>Мы предлагаем конкурентные процентные ставки по вкладам и кредитам для всех клиентов.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Круглосуточная поддержка</h3>
+                        <p>Наша команда поддержки всегда готова помочь вам с любыми вопросами.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Программа лояльности</h3>
+                        <p>Получайте бонусы и специальные предложения за использование наших услуг.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Быстрые операции</h3>
+                        <p>Мгновенные платежи и переводы между счетами без задержек и комиссий.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Отзывы наших клиентов</h2>
+                <p>Что говорят о нас люди, которые уже выбрали БанкПрестиж</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Я пользуюсь услугами БанкПрестиж уже 5 лет и очень доволен. Отличное обслуживание, удобное мобильное приложение и выгодные условия по кредитам. Рекомендую всем!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/g34ec311bf484b183dfd836ea2e4c1798aa60fc59cd9526acf9b8b324d1b03e74bc0fcadea35c4339f22122827dcdf572bb097af5e903e274081bfba8e717c9b6_1280.jpeg" alt="Александр">
+                        </div>
+                        <div class="author-info">
+                            <h4>Александр Петров</h4>
+                            <p>Предприниматель</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Оформила ипотеку в БанкПрестиж по рекомендации друзей и не пожалела. Низкая процентная ставка, быстрое оформление и внимательный персонал. Теперь я рекомендую банк своим знакомым."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/g34ec311bf484b183dfd836ea2e4c1798aa60fc59cd9526acf9b8b324d1b03e74bc0fcadea35c4339f22122827dcdf572bb097af5e903e274081bfba8e717c9b6_1280.jpeg" alt="Екатерина">
+                        </div>
+                        <div class="author-info">
+                            <h4>Екатерина Смирнова</h4>
+                            <p>Врач</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Лучший банк для бизнеса! Пользуюсь расчетным счетом и эквайрингом от БанкПрестиж. Все работает без сбоев, комиссии ниже, чем у конкурентов, а поддержка отвечает моментально."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/g34ec311bf484b183dfd836ea2e4c1798aa60fc59cd9526acf9b8b324d1b03e74bc0fcadea35c4339f22122827dcdf572bb097af5e903e274081bfba8e717c9b6_1280.jpeg" alt="Дмитрий">
+                        </div>
+                        <div class="author-info">
+                            <h4>Дмитрий Иванов</h4>
+                            <p>Владелец магазина</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="cta">
+        <div class="container">
+            <h2>Станьте клиентом БанкПрестиж уже сегодня</h2>
+            <p>Присоединяйтесь к миллионам наших довольных клиентов и откройте новые финансовые возможности с БанкПрестиж</p>
+            <a href="#" class="btn" onclick="openModal('registerModal')">Открыть счет</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>О банке</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Кредиты</a></li>
+                        <li><a href="#">Вклады</a></li>
+                        <li><a href="#">Карты</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Инвестиции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Помощь</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Безопасность</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt contact-icon"></i> Москва, ул. Банковская, 123</li>
+                        <li><i class="fas fa-phone contact-icon"></i> 8 (800) 123-45-67</li>
+                        <li><i class="fas fa-envelope contact-icon"></i> info@bankprestige.ru</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 БанкПрестиж. Все права защищены. Лицензия ЦБ РФ №1234</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для входа -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember-me">
+                        <span>Запомнить меня</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Войти</button>
+                <p class="form-footer">Забыли пароль? <a href="#">Восстановить</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="register-name">Имя</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">Телефон</label>
+                    <input type="tel" id="register-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Подтвердите пароль</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" required>
+                        <span>Я согласен с <a href="#">условиями</a> и <a href="#">политикой конфиденциальности</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
